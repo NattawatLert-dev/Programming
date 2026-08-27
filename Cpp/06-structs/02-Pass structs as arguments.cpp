@@ -26,16 +26,25 @@ int main(){
     printCar(car2, "gold");
     
     printCar(car1);
+    // address ของ car1
+    // Mustang
+    // 2023
+    // silver
+
     printCar(car2);
+    // address ของ car2
+    // Corvette
+    // 2024
+    // gold
 
     return 0;
 }
 
 void printCar(Car &car){
-    std::cout << &car << '\n';
-    std::cout << car.model << '\n';
-    std::cout << car.year << '\n';
-    std::cout << car.color << '\n';
+    std::cout << &car << '\n';      
+    std::cout << car.model << '\n'; 
+    std::cout << car.year << '\n';  
+    std::cout << car.color << '\n'; 
 }
 void printCar(Car &car, std::string color){
     car.color = color;
