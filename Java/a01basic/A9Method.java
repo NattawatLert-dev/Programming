@@ -1,6 +1,6 @@
 package a01basic;
 
-public class B10Method {
+public class A9Method {
 
     public static void main(String[] args) {
 
