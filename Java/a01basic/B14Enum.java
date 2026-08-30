@@ -322,17 +322,15 @@ public class B14Enum {
         // ========================================================
         // 6. name()
         // ========================================================
-        // name()
-        // = คืนชื่อของ Enum Constant
+        // name() = คืนชื่อของ Enum Constant
         //
         //
         // Color.RED.name()
         //     ↓
-        // "RED"
+        //   "RED"
         //
         //
-        // Return Type
-        //     = String
+        // Return Type = String
 
 
         System.out.println(Color.RED.name());
@@ -343,8 +341,7 @@ public class B14Enum {
         // ========================================================
         // 7. ordinal()
         // ========================================================
-        // ordinal()
-        // = คืนลำดับของ Enum Constant
+        // ordinal() = คืนลำดับของ Enum Constant
         //
         //
         // สำคัญมาก!
@@ -352,24 +349,18 @@ public class B14Enum {
         // ลำดับเริ่มจาก 0
         //
         //
-        // RED
-        //     = 0
+        // RED = 0
         //
-        // GREEN
-        //     = 1
+        // GREEN = 1
         //
-        // BLUE
-        //     = 2
+        // BLUE = 2
 
 
-        System.out.println(Color.RED.ordinal());
-        // 0
+        System.out.println(Color.RED.ordinal()); // 0
 
-        System.out.println(Color.GREEN.ordinal());
-        // 1
+        System.out.println(Color.GREEN.ordinal()); // 1
 
-        System.out.println(Color.BLUE.ordinal());
-        // 2
+        System.out.println(Color.BLUE.ordinal()); // 2
 
 
         // ========================================================
@@ -411,12 +402,12 @@ public class B14Enum {
         // valueOf()
         // = แปลง String
         //     ↓
-        // Enum
+        //    Enum
         //
         //
         // ตัวอย่าง
         //
-        // "RED"
+        //   "RED"
         //     ↓
         // Color.RED
         //
@@ -428,9 +419,7 @@ public class B14Enum {
 
         Color color2 = Color.valueOf("RED");
 
-        System.out.println(color2);
-
-        // RED
+        System.out.println(color2); // RED
 
 
         // ========================================================
@@ -439,16 +428,13 @@ public class B14Enum {
         // Enum เป็น Case-Sensitive
         //
         //
-        // "RED"
-        //     = ถูก
+        // "RED" = ถูก
         //
         //
-        // "red"
-        //     = ไม่ถูก
+        // "red" = ไม่ถูก
         //
         //
-        // เพราะชื่อ Enum Constant
-        // ต้องตรงกัน
+        // เพราะชื่อ Enum Constant ต้องตรงกัน
 
 
         // Color.valueOf("red");
@@ -462,8 +448,7 @@ public class B14Enum {
         // เราสามารถนำ values()
         // มาใช้เพื่อแสดงข้อมูลของ Enum ทุกตัว
         //
-        // ทั้งชื่อ
-        // และ Hex Color
+        // ทั้งชื่อ และ Hex Color
 
 
         System.out.println();
@@ -554,12 +539,10 @@ public class B14Enum {
         // BLUE("#0000FF", 3)
         //
         //
-        // แล้วสร้าง Constructor
-        // เพื่อรับค่าทั้งหมดได้
+        // แล้วสร้าง Constructor เพื่อรับค่าทั้งหมดได้
         //
         //
-        // ดังนั้น Enum สามารถทำหน้าที่
-        // คล้าย Object ที่มีข้อมูลประจำตัวได้
+        // ดังนั้น Enum สามารถทำหน้าที่ คล้าย Object ที่มีข้อมูลประจำตัวได้
 
 
         // ========================================================
@@ -570,8 +553,7 @@ public class B14Enum {
          * ENUM
          * ========================================================
          *
-         * enum
-         * = Data Type ที่กำหนดค่าที่เป็นไปได้แบบจำกัด
+         * enum = Data Type ที่กำหนดค่าที่เป็นไปได้แบบจำกัด
          *
          *
          * ตัวอย่าง
@@ -582,7 +564,6 @@ public class B14Enum {
          *     BLUE
          * }
          *
-         *
          * สามารถใช้
          *
          * Color color = Color.RED;
@@ -591,7 +572,6 @@ public class B14Enum {
          * ========================================================
          * Method สำคัญ
          * ========================================================
-         *
          *
          * values()
          * --------------------------------
@@ -611,8 +591,7 @@ public class B14Enum {
          * --------------------------------
          * คืนชื่อของ Enum Constant
          *
-         * Color.RED.name()
-         * -> "RED"
+         * Color.RED.name() -> "RED"
          *
          *
          * ordinal()
@@ -625,7 +604,6 @@ public class B14Enum {
          *
          * ⚠️ ไม่ควรใช้เป็น ID ถาวร
          *
-         *
          * ========================================================
          * Enum สามารถมี
          * ========================================================
@@ -635,26 +613,20 @@ public class B14Enum {
          * - Method
          *
          *
-         * เหมือน Class
-         * แต่ Enum มีค่าที่กำหนดไว้ล่วงหน้า
+         * เหมือน Class แต่ Enum มีค่าที่กำหนดไว้ล่วงหน้า
          *
          *
          * ========================================================
          * จำง่าย ๆ
          * ========================================================
          *
-         * values()
-         *     -> เอาทุกตัว
+         * values() -> เอาทุกตัว
          *
-         * valueOf()
-         *     -> String -> Enum
+         * valueOf() -> String -> Enum
          *
-         * name()
-         *     -> เอาชื่อ
+         * name() -> เอาชื่อ
          *
-         * ordinal()
-         *     -> เอาลำดับ
-         *
+         * ordinal() -> เอาลำดับ
          *
          * ========================================================
          */
