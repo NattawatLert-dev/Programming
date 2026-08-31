@@ -52,7 +52,7 @@ import java.util.TreeSet;
  * ============================================================
  */
 
-public class A7TreeSet {
+public class A5TreeSet {
 
     public static void main(String[] args) {
 
