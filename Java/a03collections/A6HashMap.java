@@ -1,4 +1,3 @@
-```java
 package a03collections;
 
 import java.util.HashMap;
@@ -53,7 +52,7 @@ import java.util.Map;
  * ============================================================
  */
 
-public class A9HashMap {
+public class A6HashMap {
 
     public static void main(String[] args) {
 
@@ -1031,4 +1030,3 @@ public class A9HashMap {
          */
     }
 }
-```
