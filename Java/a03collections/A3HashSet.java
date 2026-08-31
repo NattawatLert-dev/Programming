@@ -7,9 +7,7 @@ import java.util.HashSet;
  * A3HashSet
  * ============================================================
  *
- * HashSet
- * = โครงสร้างข้อมูล (Data Structure)
- *   ที่ใช้เก็บข้อมูลแบบ "ไม่ซ้ำกัน"
+ * HashSet = โครงสร้างข้อมูล (Data Structure) ที่ใช้เก็บข้อมูลแบบ "ไม่ซ้ำกัน"
  *
  * จุดสำคัญ:
  *
@@ -38,15 +36,10 @@ import java.util.HashSet;
  *
  * ตัวอย่าง:
  *
- * ArrayList:
- *
- * [10, 20, 10, 30]
+ * ArrayList: [10, 20, 10, 30]
  *
  *
- * HashSet:
- *
- * [10, 20, 30]
- *
+ * HashSet: [10, 20, 30]
  *
  * ============================================================
  */
@@ -67,12 +60,10 @@ public class A3HashSet {
         //
         // รูปแบบ:
         //
-        // HashSet<DataType> variable =
-        //         new HashSet<>();
+        // HashSet<DataType> variable = new HashSet<>();
 
 
-        HashSet<Integer> set =
-                new HashSet<>();
+        HashSet<Integer> set = new HashSet<>();
 
 
         // ========================================================
@@ -84,10 +75,7 @@ public class A3HashSet {
 
         set.add(5);
 
-        System.out.println(set);
-
-        // Output:
-        // [5]
+        System.out.println(set); // [5]
 
 
         // ========================================================
@@ -101,12 +89,8 @@ public class A3HashSet {
         set.add(5);
         set.add(5);
 
-        System.out.println(set);
-
-        // Output:
-        //
-        // [5]
-        //
+        System.out.println(set); // [5]
+    
         // ถึงแม้เราจะ add(5) หลายครั้ง
         // HashSet ก็ยังมี 5 เพียงตัวเดียว
 
@@ -119,29 +103,21 @@ public class A3HashSet {
         //
         // add() ของ Set จะคืนค่า:
         //
-        // true
-        // → เพิ่มข้อมูลสำเร็จ
+        // true → เพิ่มข้อมูลสำเร็จ
         //
-        // false
-        // → ข้อมูลนั้นมีอยู่แล้ว
+        // false → ข้อมูลนั้นมีอยู่แล้ว
 
 
-        HashSet<Integer> numbers =
-                new HashSet<>();
+        HashSet<Integer> numbers = new HashSet<>();
 
-        System.out.println(
-                numbers.add(10)
-        );
+        System.out.println(numbers.add(10));
 
         // true
 
 
-        System.out.println(
-                numbers.add(10)
-        );
+        System.out.println(numbers.add(10));
 
         // false
-        //
         // เพราะ 10 มีอยู่แล้ว
 
 
@@ -150,8 +126,7 @@ public class A3HashSet {
         // ========================================================
 
 
-        HashSet<Integer> data =
-                new HashSet<>();
+        HashSet<Integer> data = new HashSet<>();
 
         data.add(10);
         data.add(20);
@@ -212,25 +187,13 @@ public class A3HashSet {
         //
         // ใช้ตรวจสอบว่ามีข้อมูลอยู่ใน HashSet หรือไม่
         //
-        // คืนค่า:
-        //
-        // true / false
+        // คืนค่า: true / false
 
 
-        System.out.println(
-                "มี 30 หรือไม่: "
-                + data.contains(30)
-        );
-
-        // true
+        System.out.println("มี 30 หรือไม่: " + data.contains(30)); // true
 
 
-        System.out.println(
-                "มี 100 หรือไม่: "
-                + data.contains(100)
-        );
-
-        // false
+        System.out.println("มี 100 หรือไม่: " + data.contains(100)); // false
 
 
         // ========================================================
@@ -245,9 +208,7 @@ public class A3HashSet {
 
         data.remove(30);
 
-        System.out.println(
-                "หลังลบ 30: " + data
-        );
+        System.out.println("หลังลบ 30: " + data);
 
 
         // ========================================================
@@ -263,9 +224,7 @@ public class A3HashSet {
         // size()
 
 
-        System.out.println(
-                "จำนวนสมาชิก: " + data.size()
-        );
+        System.out.println("จำนวนสมาชิก: " + data.size());
 
 
         // ========================================================
@@ -275,9 +234,7 @@ public class A3HashSet {
         // ตรวจสอบว่า HashSet ว่างหรือไม่
 
 
-        System.out.println(
-                "ว่างหรือไม่: " + data.isEmpty()
-        );
+        System.out.println("ว่างหรือไม่: " + data.isEmpty());
 
         // false
 
@@ -289,22 +246,17 @@ public class A3HashSet {
         // ลบข้อมูลทั้งหมด
 
 
-        HashSet<Integer> temp =
-                new HashSet<>();
+        HashSet<Integer> temp = new HashSet<>();
 
         temp.add(10);
         temp.add(20);
         temp.add(30);
 
-        System.out.println(
-                "ก่อน clear: " + temp
-        );
+        System.out.println("ก่อน clear: " + temp);
 
         temp.clear();
 
-        System.out.println(
-                "หลัง clear: " + temp
-        );
+        System.out.println("หลัง clear: " + temp);
 
         // Output:
         //
@@ -324,7 +276,6 @@ public class A3HashSet {
         System.out.println("\nสมาชิกใน HashSet:");
 
         for (int number : data) {
-
             System.out.println(number);
         }
 
@@ -338,9 +289,7 @@ public class A3HashSet {
 
         System.out.println("\nใช้ forEach():");
 
-        data.forEach(
-                System.out::println
-        );
+        data.forEach(System.out::println);
 
 
         // ========================================================
@@ -367,8 +316,7 @@ public class A3HashSet {
         // ดังนั้นอย่าพึ่งพาลำดับของ HashSet
 
 
-        HashSet<Integer> unordered =
-                new HashSet<>();
+        HashSet<Integer> unordered = new HashSet<>();
 
         unordered.add(50);
         unordered.add(10);
@@ -376,9 +324,7 @@ public class A3HashSet {
         unordered.add(20);
         unordered.add(40);
 
-        System.out.println(
-                "\nHashSet: " + unordered
-        );
+        System.out.println("\nHashSet: " + unordered);
 
 
         // ========================================================
@@ -390,11 +336,9 @@ public class A3HashSet {
         // ข้อมูลซ้ำจะถูกตัดออกโดยอัตโนมัติ
 
 
-        HashSet<Integer> setA =
-                new HashSet<>();
+        HashSet<Integer> setA = new HashSet<>();
 
-        HashSet<Integer> setB =
-                new HashSet<>();
+        HashSet<Integer> setB = new HashSet<>();
 
         setA.add(1);
         setA.add(2);
@@ -406,9 +350,7 @@ public class A3HashSet {
 
         setA.addAll(setB);
 
-        System.out.println(
-                "addAll(): " + setA
-        );
+        System.out.println("addAll(): " + setA);
 
         // Output:
         //
@@ -422,11 +364,9 @@ public class A3HashSet {
         // ลบสมาชิกที่มีอยู่ในอีก Set
 
 
-        HashSet<Integer> removeA =
-                new HashSet<>();
+        HashSet<Integer> removeA = new HashSet<>();
 
-        HashSet<Integer> removeB =
-                new HashSet<>();
+        HashSet<Integer> removeB = new HashSet<>();
 
         removeA.add(1);
         removeA.add(2);
@@ -438,9 +378,7 @@ public class A3HashSet {
 
         removeA.removeAll(removeB);
 
-        System.out.println(
-                "removeAll(): " + removeA
-        );
+        System.out.println("removeAll(): " + removeA);
 
         // Output:
         //
@@ -459,11 +397,9 @@ public class A3HashSet {
         // "เอาเฉพาะส่วนที่เหมือนกัน"
 
 
-        HashSet<Integer> retainA =
-                new HashSet<>();
+        HashSet<Integer> retainA = new HashSet<>();
 
-        HashSet<Integer> retainB =
-                new HashSet<>();
+        HashSet<Integer> retainB = new HashSet<>();
 
         retainA.add(1);
         retainA.add(2);
@@ -476,9 +412,7 @@ public class A3HashSet {
 
         retainA.retainAll(retainB);
 
-        System.out.println(
-                "retainAll(): " + retainA
-        );
+        System.out.println("retainAll(): " + retainA);
 
         // Output:
         //
@@ -493,26 +427,19 @@ public class A3HashSet {
         // ครบทุกตัวในอีก Collection หรือไม่
 
 
-        HashSet<Integer> all =
-                new HashSet<>();
+        HashSet<Integer> all = new HashSet<>();
 
         all.add(10);
         all.add(20);
         all.add(30);
         all.add(40);
 
-        HashSet<Integer> check =
-                new HashSet<>();
+        HashSet<Integer> check = new HashSet<>();
 
         check.add(10);
         check.add(30);
 
-        System.out.println(
-                "containsAll(): "
-                + all.containsAll(check)
-        );
-
-        // true
+        System.out.println("containsAll(): " + all.containsAll(check)); // true
 
 
         // ========================================================
@@ -533,11 +460,9 @@ public class A3HashSet {
         // ถ้าเป็น Set จะถือว่าเท่ากัน
 
 
-        HashSet<Integer> first =
-                new HashSet<>();
+        HashSet<Integer> first = new HashSet<>();
 
-        HashSet<Integer> second =
-                new HashSet<>();
+        HashSet<Integer> second = new HashSet<>();
 
         first.add(10);
         first.add(20);
@@ -547,12 +472,7 @@ public class A3HashSet {
         second.add(10);
         second.add(20);
 
-        System.out.println(
-                "equals(): "
-                + first.equals(second)
-        );
-
-        // true
+        System.out.println("equals(): " + first.equals(second)); // true
 
 
         // ========================================================
@@ -562,17 +482,14 @@ public class A3HashSet {
         // HashSet สามารถเก็บ String ได้
 
 
-        HashSet<String> names =
-                new HashSet<>();
+        HashSet<String> names = new HashSet<>();
 
         names.add("Tle");
         names.add("Java");
         names.add("Python");
         names.add("Tle");
 
-        System.out.println(
-                "\nString HashSet: " + names
-        );
+        System.out.println("\nString HashSet: " + names);
 
         // "Tle" จะมีเพียงครั้งเดียว
 
@@ -585,18 +502,13 @@ public class A3HashSet {
         // และโดยทั่วไปเก็บ null ได้เพียงหนึ่งค่า
 
 
-        HashSet<String> values =
-                new HashSet<>();
+        HashSet<String> values = new HashSet<>();
 
         values.add("A");
         values.add(null);
         values.add(null);
 
-        System.out.println(
-                "HashSet + null: " + values
-        );
-
-        // null จะมีเพียงหนึ่งตัว
+        System.out.println("HashSet + null: " + values); // null จะมีเพียงหนึ่งตัว
 
 
         // ========================================================
@@ -606,16 +518,15 @@ public class A3HashSet {
          *
          * HashSet ใช้แนวคิดของ Hash Table
          *
-         *
          * สมมติเรามี:
          *
          * 100
          *
          * HashSet จะนำข้อมูลไปผ่านกระบวนการ Hash
          *
-         *        100
+         *         100
          *          ↓
-         *       hash()
+         *        hash()
          *          ↓
          *     ตำแหน่งที่เหมาะสม
          *
@@ -623,7 +534,6 @@ public class A3HashSet {
          * เมื่อค้นหา 100
          * Java สามารถใช้ Hash
          * เพื่อช่วยหาตำแหน่งได้อย่างรวดเร็ว
-         *
          *
          * จึงทำให้:
          *
@@ -634,11 +544,9 @@ public class A3HashSet {
          * โดยทั่วไปมีประสิทธิภาพประมาณ O(1)
          * ในกรณีเฉลี่ย
          *
-         *
          * หมายเหตุ:
          *
-         * O(1) ไม่ได้หมายความว่าเร็วที่สุดเสมอไป
-         * และไม่ได้รับประกันทุกสถานการณ์
+         * O(1) ไม่ได้หมายความว่าเร็วที่สุดเสมอไป และ ไม่ได้รับประกันทุกสถานการณ์
          *
          */
 
@@ -652,9 +560,7 @@ public class A3HashSet {
          *
          * 1. ต้องการข้อมูลไม่ซ้ำ
          *
-         * 2. ต้องการตรวจสอบว่า
-         *    "มีข้อมูลนี้อยู่หรือไม่"
-         *    บ่อย ๆ
+         * 2. ต้องการตรวจสอบว่า "มีข้อมูลนี้อยู่หรือไม่" บ่อย ๆ
          *
          * 3. ไม่สนใจลำดับข้อมูล
          *
@@ -677,8 +583,7 @@ public class A3HashSet {
         // นี่เป็น Use Case ที่สำคัญมากของ HashSet
 
 
-        HashSet<String> uniqueNames =
-                new HashSet<>();
+        HashSet<String> uniqueNames = new HashSet<>();
 
         uniqueNames.add("Alice");
         uniqueNames.add("Bob");
@@ -686,10 +591,7 @@ public class A3HashSet {
         uniqueNames.add("Charlie");
         uniqueNames.add("Bob");
 
-        System.out.println(
-                "\nข้อมูลไม่ซ้ำ: "
-                + uniqueNames
-        );
+        System.out.println( "\nข้อมูลไม่ซ้ำ: " + uniqueNames);
 
         // ผล:
         //
